@@ -24,7 +24,7 @@ jobs:
           python3 -m pip install mkdocs
 
       - name: Build docs site
-        runs: mkdocs build
+        run: mkdocs build
         working-directory: sites/home
 
       - name: Configure AWS Credentials
@@ -56,7 +56,7 @@ jobs:
           python3 -m pip install mkdocs
 
       - name: Build docs site
-        runs: mkdocs build
+        run: mkdocs build
         working-directory: sites/table-format
 
       - name: Configure AWS Credentials
