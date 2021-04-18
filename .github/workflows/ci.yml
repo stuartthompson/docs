@@ -5,8 +5,8 @@ on:
     branches: [main]
 
 jobs:
-  home-site:
-    name: Docs Home
+  home:
+    name: home
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
