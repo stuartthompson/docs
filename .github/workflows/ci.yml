@@ -36,6 +36,7 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync site/ s3://docs.statn.dev/home
+        working-directory: sites/home
 
   table-format:
     name: table-format
@@ -68,6 +69,7 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync site/ s3://docs.statn.dev/table-format
+        working-directory: sites/table-format
 
   bit-format:
     name: bit-format
@@ -100,4 +102,5 @@ jobs:
 
       - name: Deploy to S3
         run: aws s3 sync site/ s3://docs.statn.dev/bit-format
+        working-directory: sites/bit-format
 
