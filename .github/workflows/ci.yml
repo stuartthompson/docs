@@ -38,6 +38,10 @@ jobs:
         run: aws s3 sync site/ s3://docs.statn.dev/home
         working-directory: sites/home
 
+      - name: Deploy home index page
+        run: aws s3 cp index.html s3://docs.statn.dev
+        working-directory: sites
+
   table-format:
     name: table-format
     runs-on: ubuntu-latest
